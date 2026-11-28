@@ -1,0 +1,23 @@
+Date,Account Code,Account Name,Description,Debit,Credit
+2021-10-12,2210,Input VAT Recoverable,Input VAT AN-2021-1041 Gulf Steel Supplies LLC,5000,0
+2021-11-03,2210,Input VAT Recoverable,Input VAT AN-2021-1102 Emirates Forklift Rental,4750,0
+2021-12-15,2210,Input VAT Recoverable,Input VAT AN-2021-1187 Al Futtaim Logistics,3200,0
+2021-12-31,2220,Output VAT Payable,Output VAT Q4 2021,0,4200
+2022-07-06,2210,Input VAT Recoverable,Input VAT AN-2022-3012 Dubai Packaging Co,4000,0
+2022-08-18,2210,Input VAT Recoverable,Input VAT AN-2022-3077 Gulf Steel Supplies LLC,2500,0
+2022-08-30,2210,Input VAT Recoverable,Input VAT AN-2022-3199 Abu Dhabi Tools Trading,900,0
+2022-09-22,2210,Input VAT Recoverable,Input VAT AN-2022-3140 Sharjah Office Solutions,2000,0
+2022-09-30,2220,Output VAT Payable,Output VAT Q3 2022,0,6100
+2023-04-11,2210,Input VAT Recoverable,Input VAT AN-2023-2033 Emirates Forklift Rental,3950,0
+2023-05-29,2210,Input VAT Recoverable,Input VAT AN-2023-2101 Al Futtaim Logistics,4000,0
+2023-06-30,2220,Output VAT Payable,Output VAT Q2 2023,0,8800
+2024-01-09,2210,Input VAT Recoverable,Input VAT AN-2024-0107 Dubai Packaging Co,6000,0
+2024-02-14,2210,Input VAT Recoverable,Input VAT AN-2024-0188 Gulf IT Systems FZE,3750,0
+2024-03-20,2210,Input VAT Recoverable,Input VAT AN-2024-0251 Sharjah Office Solutions,1500,0
+2024-03-28,2210,Input VAT Recoverable,Supplier credit note CN-2024-011 Gulf IT Systems,0,300
+2024-03-31,2220,Output VAT Payable,Output VAT Q1 2024,0,5500
+2024-07-08,2210,Input VAT Recoverable,Input VAT AN-2024-3015 Al Futtaim Logistics,2500,0
+2024-08-21,2210,Input VAT Recoverable,Input VAT AN-2024-3090 Emirates Forklift Rental,2000,0
+2024-08-30,2210,Input VAT Recoverable,Input VAT AN-2024-3155 Gulf IT Systems FZE,1250,0
+2024-09-17,2210,Input VAT Recoverable,Input VAT AN-2024-3210 Dubai Packaging Co,650,0
+2024-09-30,2220,Output VAT Payable,Output VAT Q3 2024,0,3900

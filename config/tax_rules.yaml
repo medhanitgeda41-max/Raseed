@@ -1,0 +1,128 @@
+# ==============================================================================
+# Version-Controlled Statutory UAE VAT Rules
+# Each rule specifies its unique id, effective dates, official citation, and status.
+# Every rule is verified against current FTA guidance and tested by automated unit tests.
+# ==============================================================================
+
+version: "2026.3"
+currency: "AED"
+
+rules:
+  - id: "RULE_STANDARD_VAT_RATE"
+    description: "Standard VAT rate of 5% applies to taxable supplies of goods and services."
+    rate: 0.05
+    rounding_tolerance_aed: 0.05
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Article 3"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_ZERO_RATED_SUPPLIES"
+    description: "Zero-rated supplies (exports of goods/services, healthcare, basic education) carry 0% output VAT but allow full input tax recovery."
+    rate: 0.0
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Article 45"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_EXEMPT_SUPPLIES"
+    description: "Exempt supplies (financial services without explicit fee, residential buildings after first 3 years, bare land, local passenger transport) create no output tax and do not permit input tax recovery."
+    rate: 0.0
+    allows_input_tax_recovery: false
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Article 46"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_REVERSE_CHARGE_MECHANISM"
+    description: "On imports of concerned goods or services from non-resident suppliers, the UAE registered taxable recipient accounts for output tax and concurrently claims recoverable input tax in the same tax period."
+    accounts_both_output_and_input: true
+    rate: 0.05
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Article 48"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_IMPORTS_VAT"
+    description: "Imports of goods through UAE customs where VAT is deferred under the reverse charge or customs declaration (Form 701) requires reciprocal output and input accounting in Box 6 and Box 10."
+    accounts_both_output_and_input: true
+    rate: 0.05
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Articles 48 and 49"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_CREDIT_NOTES_PURCHASE"
+    description: "A tax credit note issued by a supplier reduces the recipient's recoverable input tax in the tax period the credit note was received."
+    reduces_input_tax: true
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Articles 61 and 62"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_CREDIT_NOTES_SALES"
+    description: "A tax credit note issued by the supplier to a customer reduces the supplier's declared output tax in the tax period the credit note was issued."
+    reduces_output_tax: true
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 on Value Added Tax, Articles 61 and 62"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_PARTIAL_BUSINESS_NON_BUSINESS"
+    description: "Where goods or services are acquired for both business and non-business/private use, input tax must be restricted strictly to the business proportion, requiring human confirmation."
+    requires_human_confirmation: true
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Executive Regulation of Federal Decree-Law No. 8 of 2017, Article 53(1)"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_PARTIAL_EXEMPT_APPORTIONMENT"
+    description: "A business making both taxable and exempt supplies must apportion residual input tax according to a configured recovery percentage per tax period."
+    requires_human_confirmation: true
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Executive Regulation of Federal Decree-Law No. 8 of 2017, Articles 55-58"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_BLOCKED_ENTERTAINMENT"
+    description: "Input tax on entertainment and hospitality services provided to non-employees is blocked under Article 53 unless a statutory exception applies."
+    category: "entertainment_services"
+    treatment: "NEEDS_HUMAN_REVIEW"
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Executive Regulation of Federal Decree-Law No. 8 of 2017, Article 53"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_BLOCKED_MOTOR_VEHICLE"
+    description: "Input tax incurred on purchase, lease, or maintenance of motor vehicles available for personal or non-business use is blocked under Article 54."
+    category: "motor_vehicles_personal_use"
+    treatment: "NEEDS_HUMAN_REVIEW"
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Executive Regulation of Federal Decree-Law No. 8 of 2017, Article 54"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_STATUTORY_EXPIRY_5YR"
+    description: "Excess recoverable input tax can be carried forward or refunded within 5 years from the end of the tax period in which it arose."
+    years: 5
+    effective_from: "2026-01-01"
+    effective_to: null
+    official_source: "Federal Decree-Law No. 8 of 2017 Article 74(3), as amended by Federal Decree-Law No. 16 of 2025"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_TRANSITIONAL_REFUND_DEADLINE"
+    description: "If the 5-year period expired before 1 January 2026 or expires within one year of that date, a refund can be requested until 31 December 2026."
+    transitional_deadline: "2026-12-31"
+    effective_from: "2026-01-01"
+    effective_to: "2026-12-31"
+    official_source: "Tax Procedures Law as amended by Federal Decree-Law No. 17 of 2025"
+    verification_status: "to be verified against current FTA guidance"
+
+  - id: "RULE_TRN_FORMAT"
+    description: "UAE Tax Registration Number must be exactly 15 digits starting with 100."
+    length: 15
+    starts_with: "100"
+    effective_from: "2018-01-01"
+    effective_to: null
+    official_source: "Cabinet Decision No. 52 of 2017"
+    verification_status: "to be verified against current FTA guidance"
